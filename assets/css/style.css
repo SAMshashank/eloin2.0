@@ -1108,6 +1108,7 @@ a.btn-scroll span::before {
     overflow: hidden
 }
 
+
 .crp-inventment-container2 {
     background-image: url(../img/bg/bg-3.png)
 }
@@ -1322,6 +1323,14 @@ a.btn-scroll span::before {
 
 .crp-happenning-container {
     background-image: url(../img/bg/bg-3.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+    -webkit-background-size: cover;
+    background-size: cover
+}
+
+.crp-happenning-containerxx {
+    background-image: url(../img/bg/bg-1.png);
     background-repeat: no-repeat;
     background-position: center 0;
     -webkit-background-size: cover;

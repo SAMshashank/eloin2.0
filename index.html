@@ -24,6 +24,8 @@
 
     <link rel="stylesheet" href="assets/css/style.css" />
 
+
+
     <link rel="stylesheet" href="assets/css/responsive.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
     </script>
@@ -219,7 +221,7 @@
         </div>
 
 
-        <section class="crp-inventment-container overflow-hidden">
+        <!-- <section class="crp-inventment-container overflow-hidden">
             <div class="container">
                 <div class="row pt-20 pb-90 mb-pb-20">
                     <div class="col-12 col-md-12 col-lg-8 mb-pb-0">
@@ -287,8 +289,45 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
 
+
+        <section class="crp-inventment-container overflow-hidden">
+            <div class="crp-happenning-containerxx overflow-hidden">
+                <div class="container">
+                    <div class="row justify-content-between pt-110 pb-110 mb-pt-60 mb-pb-60 crp-happenning-content">
+                        <div class="col-12 col-md-5 crp-happenning-left wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".3s">
+                            <h3>Sale Token</h3>
+                            <h2>Future digit mining crypto currency</h2>
+                            <p>
+                                Nulla vitae mauris vitae urna commodo tristique malesuada eu quam. Fusce mattis a tortor
+                                vel
+                                finibus. Nunc nec orci ex. Nulla eleifend fermentum purus sit amet ultrices. Duis
+                                viverra id
+                                nisl eu condimentum. Nullam maximus vel nunc ac imperdiet. Sed mauris
+                                ipsum, varius nec turpis finibus, luctus laoreet risus.
+                            </p>
+                            <p>
+                                Nullam mollis eget mauris ut posuere. Phasellus nec commodo neque. Sed pulvinar lobortis
+                                tellus, vitae auctor lacus ullamcorper a. Donec iaculis porta urna et sodales. I
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6 crp-happenning-right wow fadeInUp" data-wow-duration="1s"
+                            data-wow-delay=".7s">
+                            <audio id="backgroundAudio"  loop  autoplay>
+                                <source src="./assets/img/audiomic.mp3" type="audio/mp3">
+
+                            </audio>
+                            <img src="./assets/img/vidox.gif" alt="csc"
+                                style="padding-top: 20px; filter: drop-shadow(0 0 0.75rem #7f7de0); max-width: 100%; height: auto;"
+                                class="img-fluid">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <div class="features-bns-container overflow-hidden">
             <div class="container">
@@ -1514,6 +1553,35 @@
 
     <script src="assets/js/main.js"></script>
     <script src="./assets/js/mail.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var audio = document.getElementById('backgroundAudio');
+            var section = document.querySelector('.crp-happenning-right'); // Adjust the selector accordingly
+
+            function isElementInViewport(el) {
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight)
+                );
+            }
+
+            function onScroll() {
+                if (isElementInViewport(section)) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
+            }
+
+            // Listen for scroll events
+            window.addEventListener('scroll', onScroll);
+
+            // Initial check
+            onScroll();
+        });
+    </script>
 </body>
 
 </html>
